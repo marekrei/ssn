@@ -13,6 +13,7 @@ Requirements
 * python (tested with 2.7.12)
 * numpy (tested with 1.12.0)
 * theano (tested with 0.8.2)
+* lasagne (tested with 0.1)
 
 Data format
 -----------
