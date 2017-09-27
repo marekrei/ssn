@@ -57,7 +57,7 @@ We provide 3 pre-trained models, based on the paper [**Grasping the Finer Point:
 1. [**model_ssn_traintsv_vecskipatt.model**](https://s3-eu-west-1.amazonaws.com/ssnmodels/model_ssn_traintsv_vecskipatt.model)  
 The SSN fusion model trained on the Tsvetkov dataset. Receives F1=81.11 on the Tsvetkov test set.
 
-2. [**model_ssn_traintsvgut_vecskipatt.model**](https://s3-eu-west-1.amazonaws.com/ssnmodels/model_ssn_traintsvgut_vecskip.model)  
+2. [**model_ssn_traintsvgut_vecskipatt.model**](https://s3-eu-west-1.amazonaws.com/ssnmodels/model_ssn_traintsvgut_vecskipatt.model)  
 The SSN fusion model trained on the Tsvetkov+Gutierrez dataset. Receives F1=88.30 on the Tsvetkov test set.
 
 3. [**model_ssn_traintsvgut_vecskip.model**](https://s3-eu-west-1.amazonaws.com/ssnmodels/model_ssn_traintsvgut_vecskip.model)  
