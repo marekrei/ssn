@@ -4,7 +4,7 @@ Supervised Similarity Network
 SSN is a neural network project for classifying word pairs. It is described in the following paper on metaphor detection:
 
 [**Grasping the Finer Point: A Supervised Similarity Network for Metaphor Detection**](http://aclweb.org/anthology/D/D17/D17-1162.pdf)  
-Marek Rei, Luana Bulat, Douwe Kiela and Katia Shutova
+Marek Rei, Luana Bulat, Douwe Kiela and Katia Shutova..
 *In Proceedings of EMNLP-2017*
 
 Requirements
@@ -48,6 +48,19 @@ For example:
 The last two columns show predictions from the metaphor detection model -- label and score. Label 0 indicates literal phrases, label 1 shows metaphorical phrases.
 
 
+Metaphor models
+---------------
+
+We provide 3 pre-trained models, based on the paper [**Grasping the Finer Point: A Supervised Similarity Network for Metaphor Detection**](http://aclweb.org/anthology/D/D17/D17-1162.pdf). In the paper, we reported the average scores over 25 runs with different random seeds. In order to approximate this, we provide here individual models that had the performance closest to that reported average.
+
+1. [**model_ssn_traintsv_vecskipatt.model**](https://s3-eu-west-1.amazonaws.com/ssnmodels/model_ssn_traintsv_vecskipatt.model)..
+The SSN fusion model trained on the Tsvetkov dataset. Receives F1=81.11 on the Tsvetkov test set.
+
+2. [**model_ssn_traintsvgut_vecskipatt.model**](https://s3-eu-west-1.amazonaws.com/ssnmodels/model_ssn_traintsvgut_vecskip.model)..
+The SSN fusion model trained on the Tsvetkov+Gutierrez dataset. Receives F1=88.30 on the Tsvetkov test set.
+
+3. [**model_ssn_traintsvgut_vecskip.model**](https://s3-eu-west-1.amazonaws.com/ssnmodels/model_ssn_traintsvgut_vecskip.model)..
+The SSN skip-gram model trained on the Tsvetkov+Gutierrez dataset. While the previous models only contain vocabulary present in the metaphor datasets, this one stores all the skip-gram embeddings in the model (vocaulary size 184,816). Therefore, while this doesn't receive the highest F-score, it should be the best model to use for downstream applications. Receives F1=86.73 on the Tsvetkov test set.
 
 
 
