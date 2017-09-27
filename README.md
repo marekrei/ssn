@@ -5,7 +5,7 @@ SSN is a neural network project for classifying word pairs. It is described in t
 
 [**Grasping the Finer Point: A Supervised Similarity Network for Metaphor Detection**](http://aclweb.org/anthology/D/D17/D17-1162.pdf)  
 Marek Rei, Luana Bulat, Douwe Kiela and Katia Shutova  
-*In Proceedings of EMNLP-2017*
+*In Proceedings of EMNLP 2017*
 
 Requirements
 ------------
